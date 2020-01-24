@@ -1,0 +1,27 @@
+1) Take the following inputs: 
+    - Starting Station
+    - Starting Path 
+    - Ending Station 
+    - Ending Path 
+2) Check to see if the starting and ending station are in the same path: 
+    2.1) compare starting path with ending path 
+        2.1.1) if true: 
+            2.1.1.1) Declare indexStartingStation and set it to the index of the starting station in the starting path array. 
+            2.1.1.2) Declare indexEndingStation and set it to the index of the ending statio in the starting path array. 
+            2.1.1.3) Declare min variable and set it to the smaller index of the two stations. 
+            2.1.1.4) Declare max variable and set it to the larger index of the two stations. 
+            2.1.1.5) Declare numStation and set it to (min - max)
+            2.1.1.6) Return numStation
+        2.1.2) if false: 
+            2.1.2.1) Declare indexStartingStation and set it to the index of the starting station in the starting path array.
+            2.1.2.2) Declare indexEndingStation and set it to the index of the ending station in the ending path array. 
+            2.1.2.3) Declare indexParkStreetStartingPathStation and set it to the index of the Park Street station in the starting path array. 
+            2.1.2.4) Declare indexParkStreetEndingPathStation and set it to the index of the Park Street station in the ending path array. 
+            2.1.2.5) Declare minStartingPath and set it to the smaller index of indexStartingStation and indexParkStreetStartingPathStation.
+            2.1.2.6) Declare maxStartingPath and set it to the larger index of indexStartingStation and indexParkStreetStartingPathStation.
+            2.1.2.7) Declare minEndingPath and set it to the smaller index of indexEndingStation and indexParkStreetEndingPathStation.
+            2.1.2.8) Declare maxEndingPath and set it to the larger index of indexEndingStation and indexParkStreetEndingPathStation.
+            2.1.2.9) Declare numStationStartingPath and set it to (maxStartingPath - minStartingPath)
+            2.1.2.10) Declare numStationEndingPath and set it to (maxEndingPath - minEndingPath)
+            2.1.2.11) Declare numStation and set it to (numStationStartingPath + numStationEndingPath)
+            2.1.2.12) Return numStation
