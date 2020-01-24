@@ -65,7 +65,7 @@ const stopsBetweenStations = function(startingPath, startingStation, endingPath,
         } else if(numStation !== 0) {
             for(let i = max; i >= min; i--) {
                 if(i === max) console.log('Rider boards the train a ' + startingPathString + ' Line and ' + startingPath[i] + '.');
-                else if(i === min) console.log(console.log('Rider exits the train at ' + startingPathString + ' and ' + startingPath[i] + '.'));
+                else if(i === min) console.log('Rider exits the train at ' + startingPathString + ' and ' + startingPath[i] + '.');
                 else console.log('Rider arrives at ' + startingPathString + ' and ' + startingPath[i] + '.');
             }
         }
