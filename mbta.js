@@ -41,7 +41,7 @@ function stopsBetweenStations( startLine, startStation, endLine, endStation ) {
              stops = i;
            }
           }
-// FOR to catch index of end station        
+// FOR to catch index without common station         
          for (let i = 0; i < eL.length; i++) {
             if (eL[i] === endStation) {
               stops += i -1 ;
