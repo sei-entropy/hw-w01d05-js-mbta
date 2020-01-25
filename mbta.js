@@ -27,7 +27,7 @@ const Orange=[
 'backBay',
 'forestHills'
 ]
-const mbta=[Red,Green,Orange];
+const mbta={Red,Green,Orange};
 const stopsBetweenStations=function(startLine,startStation,endLine,endStation,preStops=0)
 {  
   let count=0;
