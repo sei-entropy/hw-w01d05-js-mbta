@@ -7,6 +7,7 @@ Roba Arishi
 7
 ##### How long did it take?
 2 hours and a half 
-##### Was there anything that you struggled with?  If so, what?
+##### Was there anything that you struggled with?  If so, what? 
+no 
 ##### Is there anything that you would like some further information on?
 ##### Do you have any suggestions to improve this assignment?
