@@ -16,15 +16,15 @@ const stopsBetweenStations = function(startingPath, startingStation, endingPath,
     switch(startingPath) {
         case 'Red': 
             startingPathString = startingPath;
-            startingPath = redPath; 
+            startingPath = subwayPaths.red;
             break; 
         case 'Green': 
             startingPathString = startingPath;
-            startingPath = greenPath; 
+            startingPath = subwayPaths.green;
             break; 
         case 'Orange': 
             startingPathString = startingPath;
-            startingPath = orangePath; 
+            startingPath = subwayPaths.orange;
             break; 
         default:
             return 'Starting Path is not registered in the system.'; 
