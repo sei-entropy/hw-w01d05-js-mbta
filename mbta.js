@@ -12,7 +12,7 @@ const stopsBetweenStations = function (startLine, startStation, endLine, endStat
      ['North Station', 'Haymarket', 'Park Street','State','Downtown Crossing', 'Chinatown', 'Back Bay', 'Forest Hills']
      
      };
-     count = 0;
+     count = 0 + " stops";
 
      const indexOfstartStation = subwayLines[startLine].indexOf(startStation);
      console.log(indexOfstartStation);
@@ -27,6 +27,6 @@ const stopsBetweenStations = function (startLine, startStation, endLine, endStat
            +  Math.abs((indexOfEndStation - subwayLines[endLine].indexOf('Park Street')))
      
      }
-     console.log(count); 
+     console.log(count + " stops"); 
 
 }
