@@ -27,10 +27,10 @@ const subway ={
     return Math.abs(indexEndStation - indexStartStation)
   }
     const indexParkStreetSl = subway[startLine].indexOf('Park Street');
-    const indexParkStreetEl = subway[endline].indexOf('Park Steet');
+    const indexParkStreetEl = subway[endLine].indexOf('Park Steet');
     const startLineDist = Math.abs(indexParkStreetSl - indexStartStation);
     const endlineDist = Math.abs(indexParkStreetEl - indexEndStation);
-  const totel=startLineDist+ndlineDist;
+  const totel=startLineDist+endlineDist;
     return totel;
   }
 
