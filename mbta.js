@@ -73,6 +73,5 @@ const validation = function (startLine, startStation, endLine, endStation) {
 
 console.log(stopsBetweenStations('Red', 'Alewife', 'Red', 'Alewife')+ ' stops' );
 console.log(stopsBetweenStations('Red', 'Alewife', 'Red', 'South Station')+ ' stops' );
-console.log(validation('Red', 'Alewife', 'Red', 'South Station'))
 
 
