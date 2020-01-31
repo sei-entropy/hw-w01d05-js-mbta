@@ -1,5 +1,3 @@
-
-
 const subwayLines = {
     'Red': ['South Station', 'Park Street', 'Kendall', 'Central', 'Harvard', 'Porter', 'Davis', 'Alewife'],
     'Green': ['Government Center', 'Park Street', 'Boylston', 'Arlington', 'Copley', 'Hynes', 'Kenmore '],
@@ -16,25 +14,42 @@ const stopsBetweenStations = function (startLine, startStation, endLine, endStat
     if (startLine === endLine) {
        let startIndex = subwayLines[startLine].indexOf(startStation)
         let endIndex = subwayLines[endLine].indexOf(endStation)
-        let stop = Math.abs( startIndex - endIndex ) 
-        return stop;
+        let stop = Math.abs (startIndex - endIndex) ;
 
-    } 
-    
-    else {
+      
+    return stop }
+      else {
 
-        let ofPark = subwayLines[startLine].indexOf('Park Street')
-        let firstStop = subwayLines[startLine].indexOf(startStation)
+        let ofPark = subwayLines[startLine].indexOf(startStation)
+        let firstStop = subwayLines[startLine].indexOf('Park Street')
+        let firstPark = Math.abs( ofPark - firstStop )
 
-        let firstPark = Math.abs( firstStop - ofPark )
-        let indexFinalStop = subwayLines[endLine].indexOf(endStation)
-        let finalPark = Math.abs(ofPark - indexFinalStop )
+        let ofPark1 = subwayLines[startLine].indexOf(startStation)
+        let firstStop1 = subwayLines[startLine].indexOf('Park Street')
+        let firstPark2 = Math.abs( ofPark1 - firstStop1 )
 
-        let stop = firstPark + finalPark 
+        let ofPark2 = subwayLines[startLine].indexOf(startStation)
+        let firstStop2 = subwayLines[startLine].indexOf('Park Street')
+        let firstPark3 = Math.abs( ofPark2 - firstStop2 )
+
+        let ofPark3 = subwayLines[startLine].indexOf(startStation)
+        let firstStop3 = subwayLines[startLine].indexOf('Park Street')
+        let firstPark4 = Math.abs( ofPark3 - firstStop3 )
+
+        let Park2 = subwayLines[endLine].indexOf(endStation)
+        let indexFinalStop = subwayLines[endLine].indexOf('Park Street')
+        let finalPark = Math.abs(Park2 - indexFinalStop )
+
+
+
+        let stop = firstPark + finalPark + firstPark2 + firstPark3 + firstPark4
+      
         return stop
-
     }
-}
+        
+    }
+    
+
 const lettersCase = function (area){
     area = area.trimStart();
     area =  area.trimEnd();
@@ -53,25 +68,10 @@ const lettersCase = function (area){
     }
     return newArea;
 }
-const validation = function (startLine, startStation, endLine, endStation) {
-     if (!Object.keys(subwayLines).includes(startLine)) {
-        return "Wrong start line.."
-    }
 
-    if (!Object.keys(subwayLines).includes(endLine)) {
-        return "Wrong end line.."
-    }
 
-    if (!subwayLines[startLine].includes(startStation)) {
-        return "Wrong start station.."
-    }
 
-    if (!subwayLines[endLine].includes(endStation)) {
-        return "Wrong end station.."
-    }
-}
-
-console.log(stopsBetweenStations('Red', 'Alewife', 'Red', 'Alewife')+ ' stops' );
-console.log(stopsBetweenStations('Red', 'Alewife', 'Red', 'South Station')+ ' stops' );
-
+console.log(stopsBetweenStations('Red', 'Alewife', 'Red', 'Alewife')+ ' stops' ) // 0 stops
+console.log(stopsBetweenStations('Red', 'Alewife', 'Red', 'South Station')+ ' stops' ) // 7 stops
+console.log(stopsBetweenStations('Red', 'South Station', 'Green', 'Kenmore')+ ' stops' ) // 6 stops
 
